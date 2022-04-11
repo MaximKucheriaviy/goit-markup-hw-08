@@ -1,0 +1,33 @@
+.peculiarities__list {
+    display: flex;
+    gap: 30px;
+}
+
+.peculiarities_item {
+    width: 270px;
+}
+
+.peculiarities__icon-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+  
+    background-color: $backgroundGray;
+    border-radius: 4px;
+}
+
+.peculiarities__title {
+    margin-bottom: 10px;
+  
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+.peculiarities__text {
+    line-height: 1.71;
+    color: $fontGray;
+}
