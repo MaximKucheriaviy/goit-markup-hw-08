@@ -1,13 +1,10 @@
 .peculiarities__list {
-    // display: flex;
-    // gap: 30px;
+    display: flex;
+    gap: 30px;
 }
 
-.peculiarities__item {
-    // width: 270px;
-    &:not(:last-child){
-        margin-bottom: 30px;
-    }
+.peculiarities_item {
+    width: 270px;
 }
 
 .peculiarities__icon-container {
@@ -28,7 +25,6 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
-    text-align: center;
 }
 
 .peculiarities__text {

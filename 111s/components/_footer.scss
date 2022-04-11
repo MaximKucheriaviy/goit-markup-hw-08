@@ -1,0 +1,26 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  
+    background-color: $backgroundBlack;
+}
+
+.footer > .container {
+    display: flex;
+    align-items: baseline;
+}
+
+.icons-box {
+    margin-left: 70px;
+}
+
+.footer__text{
+    margin-bottom: 20px;
+   
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $fontWhite;
+}
+
+

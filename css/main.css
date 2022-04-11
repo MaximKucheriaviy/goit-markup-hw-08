@@ -50,15 +50,13 @@ body {
 }
 
 .container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  max-width: 450px;
   margin: 0px auto;
 }
 
 .section {
   padding-bottom: 94px;
-  padding-top: 94px;
+  padding-top: 60px;
 }
 
 .form-submit-button {
@@ -146,8 +144,20 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.header__menu {
+  display: none;
+}
+
+.header__menu-button {
+  display: block;
+  padding: 0;
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
 }
 
 .navigation {
@@ -205,12 +215,10 @@ body {
 }
 
 .logo {
-  margin-right: 93px;
-  min-width: 145px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   text-decoration: none;
   color: #000000;
 }
@@ -281,27 +289,27 @@ body {
 
 .herro {
   max-width: 1600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin: 0px auto;
   text-align: center;
   background-color: #2f303a;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/studio/background-image.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio/background-image.jpg);
-  background-size: cover;
+  background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .herro__title {
-  width: 696px;
+  max-width: 360px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
   color: #ffffff;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -333,15 +341,8 @@ body {
   background-color: #188ce8;
 }
 
-.peculiarities__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
-}
-
-.peculiarities_item {
-  width: 270px;
+.peculiarities__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .peculiarities__icon-container {
@@ -364,6 +365,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .peculiarities__text {
