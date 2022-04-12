@@ -7,11 +7,14 @@
 
 .footer > .container {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    gap: 60px;
+    align-items: center;
 }
 
 .icons-box {
-    margin-left: 70px;
+    // margin-left: 70px;
+    text-align: center;
 }
 
 .footer__text{
