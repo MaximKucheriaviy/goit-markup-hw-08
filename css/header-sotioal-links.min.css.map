@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,oBAAoB,AAAA,CAChB,OAAO,CAAE,IAAI,CACb,GAAG,CAAE,IAAI,CACT,UAAU,CAAE,IAAI,CACnB,AAED,AAAA,0BAA0B,AAAA,CACtB,SAAS,CAAE,IAAI,CACf,WAAW,CAAE,IAAI,CACjB,cAAc,CAAE,MAAM,CACtB,eAAe,CAAE,IAAI,CACxB",
+    "sources": [
+        "../sass/components/header-sotioal-links.scss"
+    ],
+    "names": [],
+    "file": "header-sotioal-links.min.css"
+}

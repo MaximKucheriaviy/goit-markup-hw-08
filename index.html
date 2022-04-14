@@ -19,14 +19,14 @@
         <div class="hedder-container container" >
                 <!-- Логотип -->
             <a class = "logo" href=""><span class="logo__span">Web</span>Studio</a>
-            <div class="header__menu">
+            <div class="header__menu header__menu--hidden">
                 <nav class = "navigation">
                     <ul  class = "navigation__list">
                         <li class = "navigation__item">
                             <a class = "navigation__link is-active" href="">Студия</a>
                         </li>
                         <li class = "navigation___item">
-                            <a class = "navigation__link" href="./portfolio.html">Портфолио</a>
+                            <a class = "navigation__link " href="./portfolio.html">Портфолио</a>
                         </li>
                         <li class = "navigation__item">
                             <a class = "navigation__link" href="">Контакты</a>
@@ -44,19 +44,31 @@
                         </a>                
                     </li>
                     <li class = "header-contacts__item">
-                        <a class = "header-contacts__link" href="tel:+380961111111">
+                        <a class = "header-contacts__link header-contacts__link--telephone" href="tel:+380961111111">
                             <svg class="header-contacts__icon" width="10px" height="16px">
                                 <use href="./images/icons.svg#icon-smartphone"></use>
                             </svg>
                             +38 096 111 11 11
                         </a>
                     </li>
-                </ul>     
+                </ul>  
+                <ul class = "header-sotial-links">
+                    <li class="header-sotial-links__item">
+                        <a class="header-sotial-links__link" href="">Instagram</a>
+                    </li>
+                    <li class="header-sotial-links__item">
+                        <a class="header-sotial-links__link" href="">Twitter</a>
+                    </li>
+                    <li class="header-sotial-links__item">
+                        <a class="header-sotial-links__link" href="">Facebook</a>
+                    </li>
+                    <li class="header-sotial-links__item">
+                        <a class="header-sotial-links__link" href="">LinkedIn</a>
+                    </li>
+                </ul>   
             </div>
             <button type="button" class = "header__menu-button">
-                <img src = "./images/menu_40px.svg" width = "40" height = "40">
-                    
-                </img>
+                <img src = "./images/menu_40px.svg" alt="crost" width = "40" height = "40">
             </button>
         </div>
     </header>
@@ -151,7 +163,13 @@
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="team-list">
                     <li class="team-list__item">
-                        <img src="./images/studio/img1.jpg" alt="Фото человека" width="270">
+                        <img srcset="
+                        ./images/studio/team/t1_450_x1.jpg 1x,
+                        ./images/studio/team/t1_450_x2.jpg 2x"
+                        src="./images/studio/team/t1_450_x1.jpg" 
+                        alt="Фото человека" 
+                        width="450"
+                        >
                         <div class="team-card">
                             <h3 class="team-card__title">Игорь Демьяненко</h3>
                             <p class="team-card__text" lang="en">Product Designer</p>
@@ -188,7 +206,13 @@
                         </div>                        
                     </li>
                     <li class="team-list__item">
-                        <img src="./images/studio/img2.jpg" alt="Фото человека" width="270">
+                        <img srcset="
+                        ./images/studio/team/t2_450_x1.jpg 1x,
+                        ./images/studio/team/t2_450_x2.jpg 2x"
+                        src="./images/studio/team/t2_450_x1.jpg" 
+                        alt="Фото человека" 
+                        width="450"
+                        >
                         <div class="team-card">
                             <h3 class="team-card__title">Ольга Репина</h3>
                             <p class="team-card__text" lang="en">Frontend Developer</p>
@@ -225,7 +249,13 @@
                         </div>                       
                     </li>
                     <li class="team-list__item">
-                        <img src="./images/studio/img3.jpg" alt="Фото человека" width="270">
+                        <img srcset="
+                        ./images/studio/team/t3_450_x1.jpg 1x,
+                        ./images/studio/team/t3_450_x2.jpg 2x"
+                        src="./images/studio/team/t3_450_x1.jpg" 
+                        alt="Фото человека" 
+                        width="450"
+                        >
                         <div class="team-card">
                             <h3 class="team-card__title">Николай Тарасов</h3>
                             <p class="team-card__text" lang="en">Marketing</p>
@@ -262,7 +292,13 @@
                         </div>                        
                     </li>
                     <li class="team-list__item">
-                        <img src="./images/studio/img4.jpg" alt="Фото человека" width="270">
+                        <img srcset="
+                        ./images/studio/team/t4_450_x1.jpg 1x,
+                        ./images/studio/team/t4_450_x2.jpg 2x"
+                        src="./images/studio/team/t4_450_x1.jpg" 
+                        alt="Фото человека" 
+                        width="450"
+                        >
                         <div class="team-card">
                             <h3 class="team-card__title">Михаил Ермаков</h3>
                             <p class="team-card__text" lang="en">UI Designer</p>
@@ -474,5 +510,6 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>

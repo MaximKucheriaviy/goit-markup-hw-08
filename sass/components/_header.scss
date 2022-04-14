@@ -1,8 +1,11 @@
 .header {
   border-bottom: 1px solid rgba(236, 236, 236, 1);
+  
 }
 
 .hedder-container {
+  position: relative;
+
   display: flex;
   align-items: center;
 
@@ -11,14 +14,37 @@
 }
 
 .header__menu{
-  display: none;
+  position: absolute;
+  z-index: 1;
+
+  top:0;
+  left: 0;
+
+  padding-left: 40px;
+  padding-top: 40px;
+  padding-bottom: 48px;
+  width: 100%;
+
+  background-color: #fff;
+  // outline: 2px solid red;
+
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &--hidden{
+    transform: translateY(-101%);
+  }
 }
 
 .header__menu-button{
+  position: relative;
+  z-index: 2;
+
   display: block;
   padding: 0;
   margin-left: auto;
-
+  
   background-color: transparent;
   border: none;
 }
