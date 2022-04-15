@@ -1,9 +1,11 @@
 .buttons-list {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
 
-    gap: 8px;
+    column-gap: 8px;
+    row-gap: 15px;
 }
 
 .buttons-list__button {
