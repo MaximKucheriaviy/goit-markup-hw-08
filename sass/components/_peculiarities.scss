@@ -1,12 +1,21 @@
 .peculiarities__list {
-    // display: flex;
-    // gap: 30px;
+    @media screen and (min-width: 768px){
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
 }
 
 .peculiarities__item {
-    // width: 270px;
+    @media screen and (min-width: 768px){
+        width: 354px;
+    }
     &:not(:last-child){
         margin-bottom: 30px;
+        @media screen and (min-width: 768px){
+            margin-bottom: 0;
+        }
     }
 }
 
@@ -29,6 +38,9 @@
     line-height: 1.14;
     text-transform: uppercase;
     text-align: center;
+    @media screen and (min-width: 768px){
+        text-align: left;
+    }
 }
 
 .peculiarities__text {

@@ -10,6 +10,15 @@
     flex-direction: column;
     gap: 60px;
     align-items: center;
+
+    @media screen and (min-width: 768px){
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-left: 76px;
+        padding-right: 89px;
+        justify-content: space-between;
+        align-items: baseline;
+    }
 }
 
 .icons-box {
