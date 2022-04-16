@@ -11,6 +11,11 @@
 
   padding-top: 10px;
   padding-bottom: 10px;
+
+  @media screen and (min-width: 768px){
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }  
 }
 
 .header__menu{
@@ -35,8 +40,11 @@
     position: static;
     display: flex;
     flex-direction: row;
+    align-items: center;
 
     padding: 0px;
+    margin-left: 88px;
+    background-color: transparent;
   }
   &--hidden{
     transform: translateY(-101%);

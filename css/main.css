@@ -164,6 +164,13 @@ body {
   padding-bottom: 10px;
 }
 
+@media screen and (min-width: 768px) {
+  .hedder-container {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+}
+
 .header__menu {
   position: absolute;
   z-index: 1;
@@ -194,7 +201,12 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 0px;
+    margin-left: 88px;
+    background-color: transparent;
   }
 }
 
@@ -282,6 +294,10 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 50px;
   }
 }
 
@@ -304,6 +320,21 @@ body {
 
 .navigation__link.is-active {
   color: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation__link.is-active::before {
+    content: "";
+    position: absolute;
+    bottom: calc(0% - 34px);
+    left: 0px;
+    width: 100%;
+    height: 4px;
+    background-color: #2196f3;
+    border-radius: 2px;
+    display: block;
+    pointer-events: none;
+  }
 }
 
 .navigation__link:hover, .navigation__link:focus {
@@ -349,6 +380,12 @@ body {
 @media screen and (min-width: 768px) {
   .header-contacts {
     margin-top: 0;
+    margin-left: auto;
+    gap: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -377,14 +414,47 @@ body {
   color: #2196f3;
 }
 
+@media screen and (min-width: 768px) {
+  .header-contacts__link {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
+
 .header-contacts__link--telephone {
   font-size: 34px;
   line-height: 1.17;
   color: #2196f3;
 }
 
+@media screen and (min-width: 768px) {
+  .header-contacts__link--telephone {
+    font-size: 12px;
+    line-height: 1.16;
+    color: #757575;
+  }
+}
+
 .header-contacts__icon {
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header-contacts__icon {
+    display: block;
+    margin-right: 10px;
+    fill: #757575;
+    -webkit-transition-property: fill;
+    transition-property: fill;
+    -webkit-transition-duration: 250ms;
+            transition-duration: 250ms;
+    -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header-contacts__link:hover .header-contacts__icon,
+  .header-contacts__link:focus .header-contacts__icon {
+    fill: #2196f3;
+  }
 }
 
 .herro {
