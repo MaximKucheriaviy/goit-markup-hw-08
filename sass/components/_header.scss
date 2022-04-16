@@ -31,9 +31,18 @@
   transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 768px){
+    position: static;
+    display: flex;
+    flex-direction: row;
 
+    padding: 0px;
+  }
   &--hidden{
     transform: translateY(-101%);
+    @media screen and (min-width: 768px){
+      transform: translateY(0%);
+    }
   }
 }
 
@@ -55,5 +64,8 @@
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  @media screen and (min-width: 768px){
+    display: none;
   }
 }

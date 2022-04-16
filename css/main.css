@@ -56,6 +56,13 @@ body {
   margin: 0px auto;
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 1200px;
+    width: 768px;
+  }
+}
+
 .section {
   padding-bottom: 94px;
   padding-top: 60px;
@@ -177,9 +184,30 @@ body {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 768px) {
+  .header__menu {
+    position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0px;
+  }
+}
+
 .header__menu--hidden {
   -webkit-transform: translateY(-101%);
           transform: translateY(-101%);
+}
+
+@media screen and (min-width: 768px) {
+  .header__menu--hidden {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
 }
 
 .header__menu-button {
@@ -204,6 +232,12 @@ body {
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .header__menu-button {
+    display: none;
+  }
 }
 
 .header-sotial-links {
@@ -242,6 +276,15 @@ body {
   gap: 32px;
 }
 
+@media screen and (min-width: 768px) {
+  .navigation__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .navigation__link {
   position: relative;
   display: inline-block;
@@ -265,6 +308,12 @@ body {
 
 .navigation__link:hover, .navigation__link:focus {
   color: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation__link {
+    font-size: 14px;
+  }
 }
 
 .logo {
@@ -295,6 +344,12 @@ body {
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
   gap: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .header-contacts {
+    margin-top: 0;
+  }
 }
 
 .header-contacts__link {
