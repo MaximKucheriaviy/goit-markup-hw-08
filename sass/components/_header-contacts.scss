@@ -12,6 +12,10 @@
       
       flex-direction: column;
     }
+    @media screen and (min-width: 1200px){
+      flex-direction: row;
+      gap: 30px;
+    }
 }
 
 .header-contacts__link {
@@ -41,6 +45,10 @@
     line-height: 1.16;
   }
 
+  @media screen and (min-width: 1200px){
+    font-size: 14px;
+  }
+
   &--telephone{
     font-size: 34px;
     line-height: 1.17;
@@ -49,6 +57,9 @@
       font-size: 12px;
       line-height: 1.16;
       color: $fontGray;
+    }
+    @media screen and (min-width: 1200px){
+      font-size: 14px;
     }
   }
 }

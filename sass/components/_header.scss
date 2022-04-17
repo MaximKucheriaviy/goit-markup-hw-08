@@ -46,6 +46,9 @@
     margin-left: 88px;
     background-color: transparent;
   }
+  @media screen and (min-width: 1200px){
+    margin-left: 93px;
+  }
   &--hidden{
     transform: translateY(-101%);
     @media screen and (min-width: 768px){
