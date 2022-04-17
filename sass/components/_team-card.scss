@@ -22,4 +22,8 @@
     line-height: 1.18;
     text-align: center;
     color: $fontGray;
+
+    @media screen and (min-width: 1200px){
+        margin-bottom: 16px;
+    }
 }

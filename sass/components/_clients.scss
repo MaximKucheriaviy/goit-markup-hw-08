@@ -5,6 +5,9 @@
     font-weight: 700;
     font-size: 28px;
     line-height: 1.16;
+    @media screen and (min-width: 1200px){
+        margin-bottom: 50px;
+    }
 }
 
 .clients__list {
@@ -32,5 +35,10 @@
     &:focus{
         border-color: $accentColor;
         fill: $accentColor;
+    }
+    @media screen and (min-width: 1200px){
+        padding-left: 32px;
+        padding-right: 32px;
+        width: 170px;
     }
 }

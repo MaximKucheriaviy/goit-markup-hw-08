@@ -6,6 +6,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media screen and (min-width: 1200px){
+        align-items: flex-start;
+    }
 }
 
 .address__text {
@@ -17,6 +20,9 @@
 
 .address__item{
     text-align: center;
+    @media screen and (min-width: 1200px){
+        text-align: left;
+    }
 }
 
 .address__item + .address__item {

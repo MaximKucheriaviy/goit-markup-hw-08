@@ -19,6 +19,9 @@
         flex-wrap: wrap;
         flex-direction: row;
     }
+    @media screen and (min-width: 1200px){
+        flex-wrap: nowrap;
+    }
 }
 
 .team-list__item{
